@@ -1,0 +1,27 @@
+<!-- templates/assign_marks.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assign Marks</title>
+</head>
+<body>
+    <h2>Assign Marks</h2>
+
+    <form method="POST">
+        <label for="student_id">Student ID:</label>
+        <input type="number" name="student_id" required><br><br>
+
+        <label for="subject_id">Subject ID:</label>
+        <input type="number" name="subject_id" required><br><br>
+
+        <label for="marks">Marks Obtained:</label>
+        <input type="number" name="marks" required><br><br>
+
+        <button type="submit">Assign Marks</button>
+    </form>
+
+    <br>
+    <a href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+</body>
+</html>
